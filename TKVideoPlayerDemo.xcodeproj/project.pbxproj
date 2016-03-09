@@ -13,8 +13,9 @@
 		27D667791C8FF6970018765D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27D667781C8FF6970018765D /* Assets.xcassets */; };
 		27D6677C1C8FF6970018765D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27D6677A1C8FF6970018765D /* LaunchScreen.storyboard */; };
 		27D667851C8FF76C0018765D /* TKVideoPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D667841C8FF76C0018765D /* TKVideoPlayerView.m */; };
-		27D667881C8FF9FF0018765D /* TKVideoPlayerSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D667871C8FF9FF0018765D /* TKVideoPlayerSection.m */; };
-		27D6678B1C8FFA380018765D /* TKVideoPlayerStatusBarSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D6678A1C8FFA380018765D /* TKVideoPlayerStatusBarSection.m */; };
+		27D6678D1C9018400018765D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27D6678C1C9018400018765D /* AVFoundation.framework */; };
+		27D6678F1C9018490018765D /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27D6678E1C9018490018765D /* MediaPlayer.framework */; };
+		27D667911C9018530018765D /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27D667901C9018530018765D /* CoreMedia.framework */; };
 		51338B5FFCA5001793A0877F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 812948E5AC57CC6C27E76910 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -29,10 +30,9 @@
 		27D6677D1C8FF6970018765D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27D667831C8FF76C0018765D /* TKVideoPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKVideoPlayerView.h; sourceTree = "<group>"; };
 		27D667841C8FF76C0018765D /* TKVideoPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKVideoPlayerView.m; sourceTree = "<group>"; };
-		27D667861C8FF9FF0018765D /* TKVideoPlayerSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKVideoPlayerSection.h; sourceTree = "<group>"; };
-		27D667871C8FF9FF0018765D /* TKVideoPlayerSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKVideoPlayerSection.m; sourceTree = "<group>"; };
-		27D667891C8FFA380018765D /* TKVideoPlayerStatusBarSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKVideoPlayerStatusBarSection.h; sourceTree = "<group>"; };
-		27D6678A1C8FFA380018765D /* TKVideoPlayerStatusBarSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKVideoPlayerStatusBarSection.m; sourceTree = "<group>"; };
+		27D6678C1C9018400018765D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		27D6678E1C9018490018765D /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		27D667901C9018530018765D /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		812948E5AC57CC6C27E76910 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8392A2908D5303271E10657F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		EC738C03CC52B7665D4DEF83 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -43,6 +43,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27D667911C9018530018765D /* CoreMedia.framework in Frameworks */,
+				27D6678F1C9018490018765D /* MediaPlayer.framework in Frameworks */,
+				27D6678D1C9018400018765D /* AVFoundation.framework in Frameworks */,
 				51338B5FFCA5001793A0877F /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,10 +78,6 @@
 				27D667701C8FF6960018765D /* AppDelegate.m */,
 				27D667831C8FF76C0018765D /* TKVideoPlayerView.h */,
 				27D667841C8FF76C0018765D /* TKVideoPlayerView.m */,
-				27D667861C8FF9FF0018765D /* TKVideoPlayerSection.h */,
-				27D667871C8FF9FF0018765D /* TKVideoPlayerSection.m */,
-				27D667891C8FFA380018765D /* TKVideoPlayerStatusBarSection.h */,
-				27D6678A1C8FFA380018765D /* TKVideoPlayerStatusBarSection.m */,
 				27D667751C8FF6960018765D /* Main.storyboard */,
 				27D667781C8FF6970018765D /* Assets.xcassets */,
 				27D6677A1C8FF6970018765D /* LaunchScreen.storyboard */,
@@ -99,6 +98,9 @@
 		86704EE04E9BED7A33DEEAA7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				27D667901C9018530018765D /* CoreMedia.framework */,
+				27D6678E1C9018490018765D /* MediaPlayer.framework */,
+				27D6678C1C9018400018765D /* AVFoundation.framework */,
 				812948E5AC57CC6C27E76910 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -236,9 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				27D667711C8FF6960018765D /* AppDelegate.m in Sources */,
-				27D667881C8FF9FF0018765D /* TKVideoPlayerSection.m in Sources */,
 				27D6676E1C8FF6960018765D /* main.m in Sources */,
-				27D6678B1C8FFA380018765D /* TKVideoPlayerStatusBarSection.m in Sources */,
 				27D667851C8FF76C0018765D /* TKVideoPlayerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
