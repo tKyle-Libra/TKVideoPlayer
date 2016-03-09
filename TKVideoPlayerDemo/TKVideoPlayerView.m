@@ -29,6 +29,7 @@
         self = [super init];
     }
     
+    [self InitControls];
     
     return self;
 }
